@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musawenkosi Ngobeni - Web CV</title>
+  <link rel="stylesheet" href="MyCV1.css" />
+  <style>
+    /* Your existing CSS plus additions below */
+
+    /* Container for profile image and name */
+    header .profile-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    header .profile-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffdd57;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Navigation Menu */
+    nav {
+      background: #003366;
+      text-align: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #ffdd57;
+      margin: 0 15px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* Projects Section */
+    section.projects ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    section.projects ul li {
+      margin-bottom: 15px;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    section.projects ul li strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      color: #004080;
+    }
+
+    /* PDF Button style */
+    .pdf-btn {
+      display: inline-block;
+      background: #004080;
+      color: white;
+      padding: 10px 20px;
+      margin: 20px auto;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+    }
+
+    .pdf-btn:hover {
+      background: #003060;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation menu -->
+  <nav>
+    <a href="#personal-details">Personal Details</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Work Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <div class="container profile-header" id="personal-details">
+      <img src="https://i.pravatar.cc/150?img=12" alt="Profile Picture" />
+      <div>
+        <h1>Musawenkosi Ishmael Ngobeni</h1>
+        <p>BSc IT Student | Web Developer</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/musawenkosi-ngobeni-260002363" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/Ishmael-byte" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate IT student at North-West University (Vaal Campus), eager to apply my skills in programming and
+        web development to real-world projects.
+      </p>
+    </div>
+  </section>
+
+  <section class="education" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>BSc in Information Technology</strong><br />
+          North-West University – Vaal Campus<br />
+          2022 – Present
+        </li>
+        <li>
+          <strong>Grade 12 Certificate</strong><br />
+          Nghonyama High School, 2020
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2>Work Experience</h2>
+      <p><strong>Driver – Green Farm</strong> (FM Mkansi, Deceased)<br />
+        Feb 2021 – June 2021<br />
+        - Transported goods and assisted in farm logistics<br />
+        - Developed punctuality, reliability and time management skills
+      </p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>GitHub, VS Code</li>
+        <li>Teamwork, Communication, Time Management</li>
+        <li>Detail-oriented, Eager to Learn</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Portfolio Website</strong><br />
+          Developed a personal portfolio website showcasing projects using HTML, CSS, and JavaScript.
+        </li>
+        <li>
+          <strong>Blog Platform (In Progress)</strong><br />
+          Creating a blog platform to share IT insights and tutorials using React and Node.js.
+        </li>
+        <li>
+          <strong>Farm Logistics App</strong><br />
+          Built an app to help manage transport schedules and deliveries at Green Farm.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> ishmaelmusawenkosi@gmail.com</p>
+      <p><strong>Phone:</strong> 071 479 0848</p>
+      <p><strong>Address:</strong> 7075 Kopanong, Mamelodi, Pretoria, 012</p>
+    </div>
+  </section>
+
+  <div class="container" style="text-align:center;">
+    <button class="pdf-btn" id="downloadPDF">Download as PDF</button>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Musawenkosi Ngobeni | All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- JS for PDF download -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    document.getElementById('downloadPDF').addEventListener('click', () => {
+      const element = document.body; // whole page to PDF
+      const opt = {
+        margin: 0.5,
+        filename: 'MusawenkosiNgobeni_CV.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(element).save();
+    });
+  </script>
+</body>
+
+</html>
